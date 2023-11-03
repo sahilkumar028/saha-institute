@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+}
+header{
+    width: 100%;
+    /* background-color:  #2b2e32; */
+}
+.nav{
+      font-size: 18px;
+      color: #f8f9fa;
+ }
+.nav :hover{
+     color: white;
+    text-decoration: 1.5px underline solid rgb(179, 158, 41);
+     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+.title{
+     font-size: 25px;
+      font-weight: 600;
+ }
+.title:hover{
+      text-shadow: 2px 3px 5px rgba(196, 190, 190, 0.8);
+ }
+.container{
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url("https://th.bing.com/th/id/OIP.sUHaWIMY5rtxpW2o5aesoAHaEo?w=312&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+    /* background-image: url(./WhatsApp\ Image\ 2023-10-27\ at\ 2.17.23\ PM.jpeg); */
+}
+.text{
+   color: #f8f9fa; 
+   font-size: 30px;
+}
+h1{
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    z-index: 1 !important;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;        
+}
+.container-bottom{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color :#2b2e32 ;
+    text-decoration: none;
+}
+.bottom{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: #333232;
+    border-bottom: solid 1px grey;
+    line-height: 30px;
+    text-align: center;
+    font-size: 17px;
+    color: white;  
+}
+.container-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: 30px;
+    color: #333232;
+    text-align: center;
+    margin-top: 12px;
+}
+input{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.input-name{
+    border: 1.5px solid gray;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+}
+.input-submit input{
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.input-group{
+    /* margin: 10%; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    justify-content: space-evenly;
+    height: max-content;
+    gap: 20px;
+}
+.input-message{
+    grid-column: 1/4;
+    width: 100%;
+}

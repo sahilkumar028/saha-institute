@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #000000;
+            }
+    .main{
+        width: auto;
+        background-color: white;
+        display: flex;
+    }
+    .logo{
+        margin-top: 30PX;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .icon{
+        display: flex;
+        margin: 10px;
+    }
+    .icon li {
+        margin: 10px;
+        padding: 10px;
+    }
+    li{
+       display: inline-block; 
+      
+    }
+   .main1 li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        
+        margin: 30px;
+    }
+    @media only screen and (max-width: 768px){
+            .main1 li a{
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            margin: 20px;
+        }
+        .main1 li a:hover{
+            color:  slateblue;
+            text-shadow: slateblue;
+        }
+        .main1{
+            height: 50px !important;
+            width: auto;
+            text-align: center;
+            background-color: rgb(19, 19, 69);
+            color: white;      
+        }
+        }
+    .main1 li a:hover{
+        color:  slateblue;
+        text-shadow: slateblue;
+    }
+    .button:hover{
+        color:  rgb(243, 209, 243);
+    }
+    .main1{
+        height: 90px;
+        width: auto;
+        text-align: center;
+        background-color: rgb(19, 19, 69);
+        color: white;   
+    }
+    .main3{
+        padding: 10px;
+    }
+    .main4{
+        display: flex;
+        background-color:rgb(19, 19, 69);
+        padding: 10px;
+        text-decoration: none;
+        gap: 40px;
+    }
+    .main4  a{
+        text-decoration: none;
+        padding: 8px;
+        color: white;
+        display: flex;
+        
+    }
+    .heading{
+        padding: 6px;
+        color: rgb(255, 255, 255);
+    }
+    .image{
+        height: 100px;
+        width: 250px;
+    }
+    .main a{
+        text-decoration: none;
+        color: black;
+        display: flex;    
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        
+    }
+    .main5{
+        height: 55px; 
+        background-color: rgb(24, 24, 52);
+        color: white;
+        padding: 2px;
+        text-align: center;
+    }
+    .main5 p{
+        margin-top: 1%;
+    }
+    .arrow{
+        position:absolute;
+        z-index: 13;
+        border-radius: 50%;
+        font-size: 40px;
+        /* float: right; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        margin: 15px;
+   }
+   .arrow1{
+        display: flex;
+        justify-content: right;
+        margin-left: 10px;
+   }
+   .courseimg{
+        height:18em;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        text-align: left;
+        background-image: url("https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?size=626&ext=jpg");
+   }
+   .course{
+        color: #ffffff;
+        margin: 40px;
+        z-index: 2;
+        font-size: 60px;
+        position: absolute;
+        padding: 45px;
+        text-shadow: 3px 6px 7px  rgb(16, 15, 15);
+    }
+    .namediv{
+        width: 100%;
+    }
+    .name{
+        height: 90px;
+        width: auto;
+        text-align: center;
+        padding: 40px;
+        overflow: hidden;
+        color: black;   
+        margin-bottom: 20px;   
+    }
+    .name a:hover{
+        background-color: rgb(9, 9, 80);
+        color: white;
+    }
+    .name li a{
+        text-decoration: none;
+        color:black;
+        border: 2px solid rgb(97, 94, 94);
+        padding: 12px;
+        font-size: 20px;
+    }
+    .all a{
+        background-color: rgb(9, 9, 80);
+        color: white !important;
+    }
+    .footerdiv{
+        width: 330px;
+        display:flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 768px){
+        #preloader{
+            background-color:rgb(19, 19, 69);
+            margin: 0% !important;
+            height: 100%;
+            background-size: cover !important;
+            background-size: 8% !important;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("https://i.gifer.com/ZKZg.gif");
+            position: fixed;
+            z-index: 100;
+    }
+    }
+    #preloader{
+        background-color:rgb(19, 19, 69);
+        height: 100%;
+        background-size: 5%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://i.gifer.com/ZKZg.gif");
+        position: fixed;
+        z-index: 100;
+    }
+    @media only screen and (max-width: 768px){
+            .namediv{
+            width: 100%;
+        }
+        .name{
+            height: 45px;
+            width: auto;
+            text-align: center;
+            padding: 20px !important;
+            overflow: hidden;
+            color: black;   
+            margin-bottom: 10px;   
+        }
+        .name a:hover{
+            background-color: rgb(9, 9, 80);
+            color: white;
+        }
+        .name li a{
+            text-decoration: none;
+            color:black;
+            border: 2px solid rgb(97, 94, 94);
+            padding: 6px !important;
+            margin-bottom: 4px;
+            font-size: 10px;
+        }
+        .all a{
+            background-color: rgb(9, 9, 80);
+            color: white !important;
+        }
+    }
+    .headin{
+         text-align: center;
+         font-size: 3.5em;
+         font-weight: 300;
+    }
+    .table{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        border: 1px solid black;
+        margin-bottom: 20px;
+    }
+    .trtitle{
+        background-color: black;
+        color: white;
+    }
+   
+    .table,tr,td{
+        border: 1px solid black;
+        border-collapse: collapse; 
+    }
+    .trtitle,tr,td{
+        padding: 10px;  
+    }
+    .tablediv{
+        display: grid;
+        justify-items: center;
+    }
+    @media only screen and (max-width: 768px){
+     .headin{
+         text-align: center;
+         font-size: 1.5em;
+         font-weight: 300;
+    }
+    .table{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
+    .trtitle{
+        background-color: black;
+        color: white;
+    }
+   
+    .table,tr,td{
+        border: 1px solid black;
+        border-collapse: collapse; 
+    }
+    .trtitle,tr,td{
+        padding: 5px;  
+    }
+    .tablediv{
+        display: grid;
+        justify-items: center;
+    }
+    #trr{
+        width: 40px !important;
+    }
+    #trr1{
+        width: 180px !important;
+    }
+    #elig{
+        width: 50px !important;
+    }
+    }
+    #trr{
+        width: 90px;
+    }
+    #trr1{
+        width: 550px;
+    }
+    #elig{
+        width: 150px;
+    }
+    @media only screen and (max-width: 768px){
+        .main5{
+            font-size: 12px;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .main{
+            background-color: white;
+            display: inline;
+        }
+        .logo{
+            margin-top: 0%;
+            font-size: 5px;
+        }
+        .icon{
+            margin: 0.2px !important;
+        }
+        .icon li {
+            font-size: 10px;
+        }
+    }
+     @media only screen and (max-width: 768px){
+            .courseimg{
+                height:8.5em !important;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: left;
+                background-image: url("https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?size=626&ext=jpg");
+        }
+            .course{
+                color: #ffffff;
+                margin: 20px;
+                z-index: 2;
+                font-size: 30px !important;
+                position: absolute;
+                padding: 15px !important;
+                text-shadow: 3px 6px 7px  rgb(16, 15, 15);
+            }
+    }
+    @media only screen and (max-width: 768px){
+            .main4{
+                background-color:rgb(19, 19, 69);
+                padding: 8px;
+                text-decoration: none;
+            }
+            .image{
+                height: 90px !important;
+                width: 210px !important;
+            }
+            h2{
+                font-size: 17px;
+                
+            }
+            .heading{
+                 color: rgb(255, 255, 255);
+            }
+        }
+        @media only screen and (max-width: 768px){
+        .main4{
+            display: block;
+            background-color: rgb(5, 5, 83);
+            padding: 10px;
+            text-decoration: none;
+        }
+    }
+</style>
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="https://sahaskillinstitute.com/img/SI-logo.png" alt="">
+            </div>
+            <div class="icon">
+                <li>
+                    <a href="https://wa.me/+919871261719">
+                    <i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;9871261719,0129-4055280</i>
+                </a>
+            </li>
+                <li>
+                    <a href="mailto:email@address.com">
+                    <i class="fa fa-envelope" aria-hidden="true">&nbsp;&nbsp;sahaedu@gmail.com</i>
+                </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                        <i class="fa fa-lock" aria-hidden="true">&nbsp;&nbsp;Login</i>
+                    </a>
+                        </li>
+            </div>
+        </header>
+        <nav class="main1">
+            <li>
+                <a href="./home.html">HOME</a>
+            </li>
+            <li>
+                <a href="./aboutus.html">ABOUT US</a>
+            </li>
+            <li>
+                <a href="./course.html">COURSE</a>
+            </li>
+            <li>
+                <a href="./contactsaha.html">CONTACT</a>
+            </li>
+        </nav>
+        <div class="courseimg">
+            <h1 class="course">
+                Courses</h1>
+        </div>
+        <div class="namediv">
+         <div class="name">
+                <li class="all">
+                    <a href="">ALL</a>
+                </li>
+                <li>
+                    <a href="">COMPUTER COURSES</a>
+                </li>
+                <li>
+                    <a href="">PROFESSIONAL COURSES</a>
+                </li>
+                <li>
+                    <a href="">UNIVERSITY COURSES</a>
+                </li>
+        </div>
+        <div class="tablediv">
+            <h1 class="headin">From UGC, DEC & AICTE Approved University</h1>
+            <table class="table">
+                <tr class="trtitle">
+                    <th id="trr">S.No.</th>
+                    <th id="trr1">Course name</th>
+                    <th id="trr">Duration</th>
+                    <th id="elig">Eligibility</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Diploma in Computer Application</td>
+                    <td>1year</td>
+                    <td>10+2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bachelor of Business Administration (BBA)</td>
+                    <td>3Year</td>
+                    <td>10+2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bachelor of Computer Application (BCA)</td>
+                    <td>3Year</td>
+                    <td>10+2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>P.G. Diploma in Computer Application (PGDCA)</td>
+                    <td>1year</td>
+                    <td>Graduate</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Master of Business Administration(MBA)</td>
+                    <td>2Year</td>
+                    <td>Bachelor</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Masters of Computer Application(MCA)</td>
+                    <td>3Year</td>
+                    <td>Bachelor</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>B.A</td>
+                    <td>3Year</td>
+                    <td>10+2</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>B.com</td>
+                    <td>3Year</td>
+                    <td>10+2</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>B.sc</td>
+                    <td>3Year</td>
+                    <td>10+2</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>M.A</td>
+                    <td>2year</td>
+                    <td>Graduate</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>M.Com</td>
+                    <td>2Year</td>
+                    <td>Graduate</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>M.Sc</td>
+                    <td>2Year</td>
+                    <td>Graduate</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Diploma</td>
+                    <td>3Year</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>B.Tech</td>
+                    <td>4Year</td>
+                    <td>10+2</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>B.Ed</td>
+                    <td>2Year</td>
+                    <td>Graduate</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>LLB</td>
+                    <td>3Year</td>
+                    <td>Graduate</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>10th</td>
+                    <td>1Year</td>
+                    <td>9th Pass</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>12th</td>
+                    <td>2Year</td>
+                    <td>10th Pass</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+        <div class="main4">
+            <img class="image" src="https://sahaskillinstitute.com/img/logo2.png" alt="">
+            <div class="footerdiv">
+            <h2 class="heading">Featured  Links</h2>
+            <a href="./course.html">
+                <i  class="fa fa-chevron-right" aria-hidden="true">&nbsp; Courses</i>
+               </a>
+            <a href="./aboutus.html">
+                <i class="fa fa-chevron-right" aria-hidden="true">&nbsp;About us</i>
+                </a>
+            <a href="./contactsaha.html">
+                <i class="fa fa-chevron-right" aria-hidden="true">&nbsp;Contact</i>
+                </a>
+            </div>
+            <div class="footerdiv">
+            <h2 class="heading">
+                <i class="fa fa-location-arrow" aria-hidden="true"> &nbsp;Address</i>
+               </h2>
+            <a href="https://wa.me/+919871261719">
+                <i class="fa fa-phone" aria-hidden="true">&nbsp;9871261719 , 0129-4055280</i></a>
+            <a href="mailto:email@address.com">
+                <i  class="fa fa-envelope" aria-hidden="true">&nbsp;sahaedu@gmail.com</i>
+                </a>
+            </div>
+            <div class="footerdiv">
+                <h2 class="heading">Photo Gallery</h2>
+                    <div class="gallery">
+                        <img src="https://sahaskillinstitute.com/img/footer/1.jpg" alt="">
+                        <img src="https://sahaskillinstitute.com/img/footer/2.jpg" alt=""><br>
+                        <img src="https://sahaskillinstitute.com/img/footer/3.jpg" alt="">
+                        <img src="https://sahaskillinstitute.com/img/footer/4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        <div class="arrow1">
+            <div class="arrow">
+                <a href="">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                </a> 
+            </div>
+        </div>
+        <div class="main5">
+            <p >@2023 sahainstitute.in All Rights Reserved</p>
+        </div>
+    </div>
+    <script>   
+        setTimeout(function () {
+        var loader = document.getElementById("preloader");
+        loader.style.display = "none";
+         }, 1000);
+
+    </script>
+</body>
+</html>

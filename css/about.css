@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #000000;
+        }
+header{
+    /* height: 100PX; */
+    width: auto;
+    background-color: white;
+    display: flex;
+}
+.logo{
+    margin-top: 30PX;
+    margin-left: 20px;
+    display: inline-block;
+}
+.icon{
+    display: flex;
+    margin: 10px;
+}
+.icon li {
+    margin: 10px;
+    padding: 10px;
+}
+li{
+   display: inline-block; 
+  
+}
+@media only screen and (max-width: 768px){
+    header{
+        background-color: white;
+        display: inline;
+    }
+    .logo{
+        margin-top: 0%;
+        font-size: 5px;
+    }
+    .icon{
+        margin: 0.2px !important;
+    }
+    .icon li {
+        font-size: 10px;
+    }
+}
+.main1 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+.main1{
+    height: max-content;
+    width: auto;
+    text-align: center;
+    background-color: rgb(19, 19, 69);
+    color: white;   
+}
+.main2{
+    height: 260px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-align: left;
+    opacity: 0.7;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-electronic-technology-website-texture-background-banner-image_156039.jpg");
+}
+.about{
+    color: #ffffff;
+    margin: 40px;
+    margin-left: 10%;
+    z-index: 2;
+    font-size: 65px;
+    position: absolute;
+    padding: 40px;
+}
+.main3{
+    padding: 10px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    flex-direction: column;
+    width:13em;
+}
+.Footer{
+    display: flex;
+    background-color:rgb(19, 19, 69);
+    padding: 10px;
+    text-decoration: none;
+    gap: 40px;
+}
+.footerdiv{
+    width: 330px;
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+ a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    
+}
+.arrow a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+.Footer  a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    
+}
+.main5{
+    height: 55px; 
+    background-color: rgb(24, 24, 52);
+    color: white;
+    padding: 4px;
+    text-align: center;
+}
+.main5 p{
+    margin-top: 1%;
+}
+.main1 li a:hover{
+    color:  slateblue;
+}
+.button:hover{
+    color:  rgb(243, 209, 243);
+}
+.heading{
+    padding: 10px;
+    font-size: 27px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.image{
+    height: 120px;
+    width: 300px;
+}
+.arrow{
+    position:absolute;
+    z-index: 13;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 15px;
+}
+.arrow1{
+    display: flex;
+    justify-content: right;
+    margin-left: 10px;
+}
+
+.text{
+    display: inline;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+.text1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 40px;
+    padding: 20px;
+}
+.para{
+    float: inherit;
+    width: 50%;
+    font-size: large;
+    text-align: center;
+}
+.para1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagee{
+    float: right;
+}
+.iconss{
+    height: 430px;
+    width: 100%;
+    background-color: rgb(194, 199, 203);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headingg{
+    font-size: 50px;
+    font-weight: 200;
+    color:rgb(11, 11, 59);
+    text-align: center;
+}
+.eduicon{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 30PX;
+    gap: 80px;
+}
+.edu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 100px;
+    flex-wrap: wrap;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.edu:hover{
+    background-color: goldenrod;
+}
+.texxt{
+    margin-top: 0;
+    text-align: center;
+    padding: 5PX;
+    font-weight: 700;
+    font-size: 20px;
+}
+.texxt:hover a{
+  color: goldenrod ;
+}
+.texxt a{
+   text-decoration: none !important;
+}
+p{
+   font-size: 15px;
+}
+.texxtt{
+    text-align: center;
+    padding: 10px 0px ;
+}
+    @media only screen and (max-width: 768px){
+            .main1 li a{
+                text-decoration: none;
+                color: white;
+                font-size: 12px;
+                margin: 20px;
+            }
+                .main1 li a:hover{
+                    color:  slateblue;
+                    text-shadow: slateblue;
+                }
+                .main1{
+                    height: 50px;
+                    width: auto;
+                    text-align: center;
+                    background-color: rgb(19, 19, 69);
+                    color: white;      
+                }
+                }
+        @media only screen and (max-width: 1011px){
+                .text1{
+                      font-size: 30px;
+            }
+            .para{
+                    font-size: 15px;
+                    width: 80%;
+                    text-align: center;
+            }
+        }
+            @media only screen and (max-width: 1011px){
+                .iconss{
+                    height: 300px;
+                    width: 100%;
+                    background-color: rgb(194, 199, 203);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+            }
+            .headingg{
+                    font-size: 30px;
+                    font-weight: 200;
+                    color:rgb(11, 11, 59);
+                    text-align: center;
+            }
+            .eduicon{
+                    gap: 20px;
+            }
+            .edu{
+                    font-size: 25px;
+                    height: 50px;
+                    width: 50px;
+                    background-color: #ffffff;
+                    border-radius: 50%;
+            }
+            .edu:hover{
+                 background-color: goldenrod;
+            }
+            .texxt{
+                    text-align: center;
+                    padding: 5PX;
+                    font-weight: 400 !important;
+                    font-size: 12px;
+            }
+            .texxt:hover a{
+                color: goldenrod ;
+            }
+            .texxt a{
+                text-decoration: none !important;
+            }
+            p{
+                font-size: 10px;
+            }
+            .texxtt{
+                    text-align: center;
+                    padding: 5px 0px ;
+            }
+            }
+    @media only screen and (max-width: 1011px){
+            .main2{
+                height: 200px !important;
+                width: auto;
+                overflow: hidden; 
+                margin-top: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: block;
+                text-align: left;
+                opacity: 0.7;
+                background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-electronic-technology-website-texture-background-banner-image_156039.jpg);
+        }
+        .about{
+            color: #ffffff;
+            margin: 20px;
+            z-index: 2;
+            font-size: 40px !important;
+            position: absolute;
+            padding: 40px;
+        }
+        }
+        @media only screen and (max-width: 768px){
+            #preloader{
+                background-color:rgb(19, 19, 69);
+                margin: 0% !important;
+                height: 100%;
+                background-size: cover !important;
+                background-size: 8% !important;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("https://i.gifer.com/ZKZg.gif");
+                position: fixed;
+                z-index: 100;
+        }
+        }
+        #preloader{
+            background-color:rgb(19, 19, 69);
+            height: 100%;
+            background-size: 5%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("https://i.gifer.com/ZKZg.gif");
+            position: fixed;
+            z-index: 100;
+        }
+        @media only screen and (max-width: 768px){
+            .Footer{
+                display: block;
+                background-color: rgb(5, 5, 83);
+                padding: 10px;
+                text-decoration: none;
+            }
+}
