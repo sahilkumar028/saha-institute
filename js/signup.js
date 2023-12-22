@@ -11,7 +11,6 @@ class Student{
         this.mentor = mentor ;
         this.gender = gender ;
     }
-
 }
  
 function getData(){
@@ -33,7 +32,12 @@ function getData(){
     return student;
 }
 
-function signUp() {
+// const signUp =()=>{
+//     let student=getData();
+//     console.log(JSON.stringify(student))    
+// }
+
+const signUp=()=>{
     let student=getData();
     const apiUrl = "http://localhost:8080/erp/admission"; // Replace with your API endpoint
 
@@ -44,17 +48,66 @@ function signUp() {
         },
         body: JSON.stringify(student) // Convert data to JSON and send it in the request body
     })
-    .then((response) => {
+    .then(async (response) => {
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
-        return response.json();
+        return await response.json();
     })
     .then((d) => {
-        console.log("pass"+d);
+        alert("Thanku for register to saha institute your student id is "+d)
+        window.location.reload();
+        
     })
     .catch((error) => {
         console.error("There was a problem with the fetch operation:", error);
     });
 }
 
+
+// function signUp() {
+//     let student=getData();
+//     const apiUrl = "http://localhost:8080/erp/admission";
+//     let headers = new Headers();
+//     headers.append('Content-Type', 'application/json');
+//     headers.append('Accept', 'application/json');
+//     headers.append('Access-Control-Allow-Origin', 'http://localhost:8080');
+//     headers.append('Access-Control-Allow-Credentials', 'true');
+  
+//     headers.append('POST', 'OPTIONS');
+  
+//     // headers.append('Authorization', 'Basic ' + base64.encode(username + ":" + password));
+  
+//     fetch(apiUrl, {
+//         mode: 'no-cors',
+//         credentials: 'include',
+//         method: 'POST',
+//         headers: headers,
+//         body: JSON.stringify(student)
+//       })
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+//       .catch(error => console.log('Authorization failed : ' + error.message));
+// }
+
+
+// function signUp() {
+//     let student = getData();
+//     const apiUrl = "http://localhost:8080/erp/admission";
+//     let headers = new Headers();
+//     headers.append('Content-Type', 'application/json');
+//     headers.append('Accept', 'application/json');
+  
+//     // Remove unnecessary headers
+
+//     fetch(apiUrl, {
+//         method: 'POST',
+//         mode: 'cors', // Use 'cors' mode for CORS requests
+//         credentials: 'include',
+//         headers: headers,
+//         body: JSON.stringify(student)
+//     })
+//     .then(response => response.json())
+//     .then(json => console.log(json))
+//     .catch(error => console.log('Authorization failed: ' + error.message));
+// }
